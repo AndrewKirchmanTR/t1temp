@@ -1,4 +1,4 @@
-name: Locker Soccer Mocker Docker
+name: Locker Soccer Mocker Rocker Docker
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
           who-to-greet: ${{ github.actor }}
 
       - name: Output time set in container
-        run: echo "The time was ${{ The time was steps.hello-action.outputs.time }} when the action said hello"
+        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
 
       
         
